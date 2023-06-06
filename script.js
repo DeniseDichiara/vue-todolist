@@ -5,7 +5,8 @@ createApp({
         return{
             todoList: [
                 {
-                    text: 'Fare workout'
+                    text: 'Fare workout',
+                    done: false
                 },
                 {
                     text: 'Rivedere codice'
@@ -34,8 +35,16 @@ createApp({
     },
     methods: {
         addNewTodoElement(todoElement){
-            this.todoList.push(todoElement);
-            this.newElement = {text: ''};
+            if (this.newElement.text !== ''){
+                this.todoList.push(todoElement);
+                this.newElement = {text: ''};
+            }
+        },
+
+        strikethroughElement(doneActivity){
+            if (doneActivity === this.todoList.done){
+
+            }
         }
     },
 
