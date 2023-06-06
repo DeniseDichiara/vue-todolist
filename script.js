@@ -29,13 +29,14 @@ createApp({
                     text: 'Prendere tisana dopo aver fatto codice'
                 },
             ],
-            newElement : '',
+            newElement : {text: ''},
         }
     },
     methods: {
         addNewTodoElement(todoElement){
             this.todoList.push(todoElement);
+            this.newElement = {text: ''};
         }
     },
-    
+
 }).mount('#app');
