@@ -34,8 +34,10 @@
 
             <div class="action-bar">
                 <div>
-                    <input type="text" class="my_input">
-                    <button type="button" class="btn btn-primary my_button">Aggiungi elementi alla lista</button>
+                    <input type="text" class="my_input" v-model="newElement">
+                    <button type="button" class="btn btn-primary my_button" @click="addNewTodoElement(newElement)">
+                        Aggiungi elementi alla lista
+                    </button>
                 </div>
             </div>
 
