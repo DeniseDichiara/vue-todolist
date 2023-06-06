@@ -19,13 +19,22 @@
 
             <div class="todo-list">
                 <h2>Lista della spesa:</h2>
+
                 <ul>
                     <li v-for="todoItem in todoList">
                         {{todoItem.text}}
                     </li>
                 </ul>
 
+                <div class="action-bar">
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+
             </div>
+
+            
 
         </div>
 
