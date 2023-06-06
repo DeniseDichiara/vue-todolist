@@ -43,7 +43,7 @@ createApp({
 
         strikethroughElement(doneActivity){
             if (doneActivity === this.todoList.done){
-
+//* (this.todolist.done === true){allora barra il testo}
             }
         }
     },
