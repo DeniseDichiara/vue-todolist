@@ -20,9 +20,9 @@
             <div class="todo-list">
                 <h2>Lista della spesa:</h2>
                 <ul>
-                    <li>Ciao</li>
-                    <li>Ciaone</li>
-                    <li>Se vedemio</li>
+                    <li v-for="todoItem in todoList">
+                        {{todoItem.text}}
+                    </li>
                 </ul>
 
             </div>
