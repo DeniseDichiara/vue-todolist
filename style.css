@@ -46,6 +46,10 @@ li{
     margin-left: 7rem;
 }
 
+.my_input{
+    padding: .35rem 2rem;
+}
+
 .my_button{
     margin-left: 1rem;
 }
