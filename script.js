@@ -6,7 +6,7 @@ createApp({
             todoList: [
                 {
                     text: 'Fare workout',
-                    done: false
+                    done: false/true
                 },
                 {
                     text: 'Rivedere codice'
@@ -52,7 +52,9 @@ createApp({
 
             //* (this.todolist.done === true){allora barra il testo}
             if (doneActivity === true){
-                todoList.text 
+            } else{
+                const isContentShown = ref(false)
+                const open = () => (isContentShown.done = true)
             }
         }
     },
