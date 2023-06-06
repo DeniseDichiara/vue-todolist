@@ -41,9 +41,18 @@ createApp({
             }
         },
 
+        removeTodoElement(todoElementIndex){
+            if(todoElementIndex >=this.todoList.lenght || todoElementIndex < 0){
+            } else{
+                this.todoList.splice(todoElementIndex, 1)
+            }
+        },
+
         strikethroughElement(doneActivity){
-            if (doneActivity === this.todoList.done){
-//* (this.todolist.done === true){allora barra il testo}
+
+            //* (this.todolist.done === true){allora barra il testo}
+            if (doneActivity === true){
+                todoList.text 
             }
         }
     },
