@@ -44,8 +44,12 @@ li{
 }
 
 li:hover{
-    background-color: chartreuse;
+    background-color: rgb(253, 208, 255);
     color: black;
+}
+
+i{
+    cursor:pointer ;
 }
 
 .action-bar{
