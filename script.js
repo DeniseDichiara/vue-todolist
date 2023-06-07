@@ -44,7 +44,7 @@ createApp({
         removeTodoElement(todoElementIndex){
             if(todoElementIndex >=this.todoList.lenght || todoElementIndex < 0){
             } else{
-                alert('Do you really wont to delete this row?');
+                alert('Do you really want to delete this line?');
                 this.todoList.splice(todoElementIndex, 1)
             }
         },
