@@ -46,7 +46,6 @@ li{
 li:hover{
     background-color: chartreuse;
     color: black;
-    font-weight:bold ;
 }
 
 .action-bar{
