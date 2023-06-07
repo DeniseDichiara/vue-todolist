@@ -49,13 +49,13 @@ createApp({
             }
         },
 
-        strikethroughElement(doneActivity){
-
+        strikethroughTodoElement(doneActivity){
             //* (this.todolist.done === true){allora barra il testo}
-            if (doneActivity === true){
+            if (doneActivity >=this.todoList.lenght || doneActivity < 0){
             } else{
-                const isContentShown = ref(false)
-                const open = () => (isContentShown.done = true)
+                this.todoList.strike(doneActivity, 1)
+                //const isContentShown = ref(false)
+                //const open = () => (isContentShown.done = true)
             }
         }
     },
