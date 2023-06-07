@@ -30,6 +30,7 @@
                 <ul>
                     <li v-for="(todoItem, index) in todoList">
                         {{todoItem.text}}
+                        <i class="fa-solid fa-check ms-2" style="color: #06dc02;" @click="strikethroughTodoElement(index)"></i>
                         <i class="fa-solid fa-xmark ms-2 " style="color: #ff0000;" @click="removeTodoElement(index)"></i>
                     </li>
                 </ul>
